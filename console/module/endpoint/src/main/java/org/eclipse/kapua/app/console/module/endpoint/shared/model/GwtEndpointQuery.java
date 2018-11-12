@@ -1,0 +1,63 @@
+/*******************************************************************************
+ * Copyright (c) 2018 Eurotech and/or its affiliates and others
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Eurotech - initial API and implementation
+ *******************************************************************************/
+package org.eclipse.kapua.app.console.module.endpoint.shared.model;
+
+import org.eclipse.kapua.app.console.module.api.shared.model.query.GwtQuery;
+
+public class GwtEndpointQuery extends GwtQuery {
+
+    private String schema;
+    private String dns;
+    private Number port;
+    private boolean secure;
+    private boolean check;
+
+    public String getSchema() {
+        return schema;
+    }
+
+    public void setSchema(String schema) {
+        this.schema = schema;
+    }
+
+    public String getDns() {
+        return dns;
+    }
+
+    public void setDns(String dns) {
+        this.dns = dns;
+    }
+
+    public Number getPort() {
+        return port;
+    }
+
+    public void setPort(Number port) {
+        this.port = port;
+    }
+
+    public boolean getSecure() {
+        return secure;
+    }
+
+    public void setSecure(boolean secure) {
+        this.secure = secure;
+    }
+
+    public boolean getCheck() {
+        return check;
+    }
+
+    public void setCheck(boolean check) {
+        this.check = check;
+    }
+}
